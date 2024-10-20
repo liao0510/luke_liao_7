@@ -1,4 +1,3 @@
-=== 
 Holiday Class
 ===
 ### week1
