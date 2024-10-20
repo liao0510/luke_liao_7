@@ -13,4 +13,12 @@ power mode
 shift+space:整行選取
 shift+control+P:搜尋
 
+比較完善的教學網站:MDN
+常用function:
+  foreach
+  map
+  filter
+  find
+  reverse
+  sort
 
