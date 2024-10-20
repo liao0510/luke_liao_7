@@ -125,6 +125,7 @@ function math(){
       obj[num] = 1
     }
     
+    
   }
   
   console.log(obj)
