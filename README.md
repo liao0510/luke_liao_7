@@ -15,6 +15,10 @@ Holiday Class
 - !: html一鍵生成html範例
 - shift+space:整行選取
 - shift+control+P:搜尋
+
+# week2
+
+# week3
 ### 教學網站:MDN
 ### 常用function
 - foreach
@@ -23,5 +27,3 @@ Holiday Class
 - find
 - reverse
 - sort
-# week2
-- 456

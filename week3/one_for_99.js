@@ -125,8 +125,13 @@ function math(){
       obj[num] = 1
     }
     
-    
+
   }
   
   console.log(obj)
+  ary1 = new Array(10)
+  for (i = 0;i<ary1.length;i++){
+    ary1[i] = random_num(0,10)
+  }
+  console.log(ary1)
 }
