@@ -117,8 +117,8 @@ function math(){
     2:0,
     3:0
   }
-  for(i = 0;i<100;i++){
-    num = random_num(0,10)
+  for(i = 0;i<1000;i++){
+    num = random_num(1,49)
     if(obj[num]){
       obj[num]+=1
     }else {
@@ -130,8 +130,9 @@ function math(){
   
   console.log(obj)
   ary1 = new Array(10)
+  ary2 = Array.apply(null,new Array(10)).map(val=>random_num(0,10))
   for (i = 0;i<ary1.length;i++){
     ary1[i] = random_num(0,10)
   }
-  console.log(ary1)
+  console.log(ary2)
 }

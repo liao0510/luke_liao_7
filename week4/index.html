@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week2 practice</title>
+</head>
+<body>
+    <h1>第四周課堂練習</h1>
+    <h2>test</h2>
+    <h3>Keep going~ Don't sleep!!!</h3>
+    
+    <span>抽籤:</span>
+    <input type="number" onchange="reset()" style="width:30px" id="lotteryMin" min="1" value="1">
+    <span>~</span>
+    <input type="number" onchange="reset()" style="width:30px" id="lotteryMax" min="1" value="49">
+    
+    <input type="button" onclick="lottery()" value="抽籤" >
+    <input type="button" onclick="reset()" value="清除" ><br><br>
+
+    <input type="button" onclick="date_control()" value="日期" ><br><br>
+
+    <div id="result"></div>
+    <!-- <input type="button" onclick="calculate_while()" value="使用while迴圈" ><br><br>
+    <input type="button" onclick="calculate_dowhile()" value="使用do while迴圈" ><br><br> -->
+
+    <!-- <input type="button" onclick="array()" value="array control" ><br><br> -->
+    <script src = "./week4.js"></script>
+</body>
+</html>
