@@ -40,6 +40,8 @@ function lottery(){
 }
 var nowTime = null;
 function date_control() {
+  var timebody = document.getElementById("timeResult")
+
   const now = Date()
   const time = new Date()
   const nextYear = time.getFullYear()
@@ -57,14 +59,99 @@ function date_control() {
     hour = Math.floor(nowTime%86400/3600)
     min = Math.floor(nowTime%3600/60)
     sec = nowTime%60
-    console.clear()
-    console.log(`跨年倒數 ${day}天${hour}:${min}:${sec}`)
-  
+    // console.clear()
+    timebody.innerText = `現在時間: ${time.getHours()}:${time.getMinutes()}:${time.getSeconds()}\n`
+    timebody.innerText += `跨年倒數 ${day}天${hour}:${min}:${sec}`
+    // console.log(`跨年倒數 ${day}天${hour}:${min}:${sec}`)
+    window.document.head
   }
-  setTimeout(()=>{
-    date_control()
-  },0)
+  // setTimeout(()=>{
+  //   date_control()
+  // },0)
 }
+function test() {
+  alert("123")
+  console.log(window.document)
+  console.log(window.location)
+  console.log(window.screen)
+}
+function hrefChange() {
+  
+  window.location.href="https://www.google.com"
+}
+function openPage() {
+  myWindow = window.open("https://www.w3schools.com", "_blank");
+  
+}
+function prettyAlert(){
+  swal({
+    icon: "warning",
+    buttons:{
+      A: {
+        text: "Btn A",
+        value: "Btn A"
+      },
+      B: {
+        text: "Btn B",
+        value: "Btn B"
+      },
+      C: {
+        text: "Btn C",
+        value: "Btn C"
+      }
+    }
+  })
+}
+async function setTimeOut() {
+  
+  rand_num = rand(0,1)
+  alertResult = await swal({
+    title:"拆炸彈",
+    icon: "warning",
+    buttons:{
+      A: {
+        text: "red line",
+        value: "red"
+      },
+      B: {
+        text: "blue line",
+        value: "blue"
+      }
+    }
+  })
+  const timeTag = setTimeout(() => {
+    swal("Bommmmmm!!!","Bommmmmm!!!","error")
+}, 1000);
+  if (alertResult == "red") choose = 0
+  else choose = 1
+  if (choose = rand_num){
+    clearTimeout(timeTag)
+  }
+  
+}
+var interval = null
+function settimer(){
+  interval = setInterval(()=>{
+    date_control() 
+  },1000)
+  
+}
+function cleartimer(){
+  clearInterval(interval)
+}
+function selector() {
+  var getid = document.querySelector("#timeResult")//找id
+  var getclass = document.querySelector(".myImg")//找class
+  var gettagname = document.querySelectorAll("li")//找tagname
+  
+  console.log(getid)
+  console.log(getclass)
+  gettagname.forEach((value)=>{
+    console.log(value)
+  })
+}
+date_control()
+
   
 
 

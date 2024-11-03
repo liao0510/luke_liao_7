@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week2 practice</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Week4 practice</title>
 </head>
 <body>
     <h1>第四周課堂練習</h1>
     <h2>test</h2>
     <h3>Keep going~ Don't sleep!!!</h3>
-    
+    <div id="timeResult"></div>
     <span>抽籤:</span>
     <input type="number" onchange="reset()" style="width:30px" id="lotteryMin" min="1" value="1">
     <span>~</span>
@@ -17,9 +18,24 @@
     
     <input type="button" onclick="lottery()" value="抽籤" >
     <input type="button" onclick="reset()" value="清除" ><br><br>
+    
+    <h2>BomControl</h2>
+    <input type="button" onclick="test()" value="test" ><br>
+    <input type="button" onclick="prettyAlert()" value="prettyAlert" ><br>
+    <input type="button" onclick="hrefChange()" value="hrefChange" ><br>
+    <input type="button" onclick="openPage()" value="openPage" ><br>
+    <input type="button" onclick="setTimeOut()" value="setTimeOut" ><br>
+    <input type="button" onclick="settimer()" value="計時" >
+    <input type="button" onclick="cleartimer()" value="停止計時" ><br>
+    <input type="button" onclick="selector()" value="selector" ><br>
 
-    <input type="button" onclick="date_control()" value="日期" ><br><br>
+    <img src="https://picsum.photos/300/200/?random=10" class="myImg">
 
+    <ul>
+      <li id="list1">item1</li>
+      <li id="list2">item2</li>
+      <li id="list3">item3</li>
+    </ul>
     <div id="result"></div>
     <!-- <input type="button" onclick="calculate_while()" value="使用while迴圈" ><br><br>
     <input type="button" onclick="calculate_dowhile()" value="使用do while迴圈" ><br><br> -->
