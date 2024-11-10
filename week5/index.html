@@ -18,26 +18,46 @@
   <input type="button" value="onclick demo" onclick="showalert('我是 onclick 效果')">
   <hr>
   <input type="button" value="onclick" onclick="whatIs(this)">
-  <div id="loki">0</div>
-  <hr>
+
   <input type="button" value="onmousedown" onmousedown="whatIs(this)">
-  <hr>
-  <input type="button" class="demo" value="onmouseup" onmouseup="whatIs(this)">
-  <hr>
+  <input type="button" value="onmouseup" onmouseup="whatIs(this)">
   <input type="button" value="onmouseover" onmouseover="whatIs(this)">
-  <hr>
   <input type="button" value="onmouseout" onmouseout="whatIs(this)">
+  <div class="demo" id="loki">0</div>
   <hr>
   <input value="onchange" onchange="whatIs(this)">
   <hr>
   <input value="onblur" onblur="whatIs(this)">
   <hr>
   <input value="onfocus" onfocus="whatIs(this)">
-
+  <hr>
+  <input value="password" onfocus="clearpassword(this)" onchange="passCheck(this)">
+  <div id="checkPasswordResult">0</div>
   <div id="fakeBtn"></div>
   <hr>
   <div>你的鍵盤號碼為：<span id="keycode"></span></div>
   <div id="result"></div>
+  <input type="button" id="clickbutton" value="click me">
+  <input type="button" id="Ock" value="事件監聽">
+  <input type="button" id="clearOck" value="取消監聽">
+  <hr>
+  <input type="password" id="password" value="123">
+  <input type="button" id="view" value="view">
+  <hr>
+  <input type="button" id="addChild" value="addChild">
+  <div id="group">
+
+
+  </div>
+  <hr>
+  <div id="changeColor">
+    <div id="shape" style="background-color: red;"></div><br>
+    <input type="button" value="方形">
+    <input type="button" value="圓形">
+    <input type="button" value="三角形"><br>
+    <input id="colorChange" value="">
+  </div>
+
   <!-- <input type="button" onclick="calculate_while()" value="使用while迴圈" ><br><br>
     <input type="button" onclick="calculate_dowhile()" value="使用do while迴圈" ><br><br> -->
 
