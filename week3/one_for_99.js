@@ -118,7 +118,7 @@ function math(){
     3:0
   }
   for(i = 0;i<1000;i++){
-    num = random_num(1,49)
+    num = random_num(1,9)
     if(obj[num]){
       obj[num]+=1
     }else {
